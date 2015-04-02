@@ -12,11 +12,14 @@ class PrimesGeneratorTest < Test::Unit::TestCase
     should 'be true for primes' do
       assert(PrimesGenerator.is_prime?(2))
       assert(PrimesGenerator.is_prime?(3))
+      assert(PrimesGenerator.is_prime?(5))
       assert(PrimesGenerator.is_prime?(7))
       assert(PrimesGenerator.is_prime?(29))
       assert(PrimesGenerator.is_prime?(137))
       assert(PrimesGenerator.is_prime?(541))
       assert(PrimesGenerator.is_prime?(1063))
+      assert(PrimesGenerator.is_prime?(5309))
+      assert(PrimesGenerator.is_prime?(12491))
     end
     
     should 'not be true for composite numbers' do
@@ -37,7 +40,11 @@ class PrimesGeneratorTest < Test::Unit::TestCase
     should 'not be true for negative numbers' do
       assert(!PrimesGenerator.is_prime?(-3))
       assert(!PrimesGenerator.is_prime?(-11))
-    end  
+    end
+    
+    should 'check the square root of the number' do
+      assert(!PrimesGenerator.is_prime?(49))
+    end
   end
   
   context 'generate' do
