@@ -1,5 +1,17 @@
 Prime Number Generator Coding Exercise
 =======
+**Usage:**  
+Run main.rb with one argument to check if a number is prime or with two arguments
+to generate a list of prime numbers in that interval
+    
+    ruby main.rb 32416190071
+    true  
+    
+    ruby main.rb 231500 231600
+    [231503, 231529, 231533, 231547, 231551, 231559, 231563, 231571, 231589, 231599]
+
+Exercise Description
+-----------
 **Overview:**  
 Your task is to use test driven development to implement a prime number generator that
 returns an ordered list of all prime numbers in a given range (inclusive of the endpoints).
@@ -10,7 +22,7 @@ user to specify the prime number range via the command line. To successfully
 complete the exercise, all unit tests must pass as well as provide 100% code coverage.
 
 **Notes:**  
-• The code should handle inverse ranges such that 1-10 and 10-1 are equivalent.
+• The code should handle inverse ranges such that 1-10 and 10-1 are equivalent.  
 • Ensure that you run a test against the range 7900 and 7920 (valid primes are 7901, 7907, 7919).
 
 **Interface:**
