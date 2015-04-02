@@ -1,7 +1,7 @@
 module PrimesGenerator
   
   class << self
-    # all prime numbers can be written in the form 6k ± 1
+    # all prime numbers can be written in the form 6k ± 1 except 2 and 3
     # if the number is composite at least one of the factors is smaller than sqrt(n)
     # so we only have to check until there
     def is_prime?(number)
