@@ -14,8 +14,17 @@ module PrimesGenerator
       return true
     end
     
-    def generate(first, last)
-      
+    def generate(number1, number2)
+      if number1 < number2
+        first, last = number1, number2
+      else
+        first, last = number2, number1
+      end
+      result = []
+      (first..last).each do |n|
+        result << n if is_prime?(n)
+      end
+      return result
     end
   end
   

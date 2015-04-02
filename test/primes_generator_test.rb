@@ -61,6 +61,5 @@ class PrimesGeneratorTest < Test::Unit::TestCase
       assert_equal(PrimesGenerator.generate(1, 10), PrimesGenerator.generate(10, 1))
     end
   end
-  
-  
+
 end
